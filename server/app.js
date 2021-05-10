@@ -1,5 +1,5 @@
 const express = require("express");
-var cors = require("cors");
+const cors = require("cors");
 const app = express();
 const port = 3000;
 
@@ -12,6 +12,15 @@ app.get("/", (req, res) => {
 app.get("/users", (req, res) => {
   res.setHeader("Content-Type", "application/json");
   res.send([{ name: "Thomas Jang" }, { name: "AXBOOT" }, { name: "AXISJ" }]);
+});
+
+app.get("/workspaces", (req, res) => {
+  res.setHeader("Content-Type", "application/json");
+  res.send([
+    { name: "workspace 1" },
+    { name: "workspace 2" },
+    { name: "workspace 3" },
+  ]);
 });
 
 app.listen(port, () => {
