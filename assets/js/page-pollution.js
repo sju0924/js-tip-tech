@@ -32,3 +32,9 @@ function getArr() {
     return item;
   });
 }
+
+// IIFE
+(function () {
+  var p1 = "a";
+  console.log(p1);
+})();
