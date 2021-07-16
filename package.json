@@ -4,11 +4,12 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "start": "node server/app.js"
+    "start": "nodemon server/app.js 4001"
   },
   "license": "MIT",
   "dependencies": {
     "cors": "^2.8.5",
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemon": "^2.0.12"
   }
 }
