@@ -15,18 +15,18 @@ app.get("/users", (req, res) => {
     { name: "Thomas Jang" },
     { name: "AXBOOT" },
     { name: "AXISJ" },
-    { name: "경희대학교1" },
-    { name: "경희대학교2" },
-    { name: "경희대학교3" },
+    { name: "지언이" },
+    { name: "아오야기 토우야" },
+    { name: "시노노메 아키토" },
   ]);
 });
 
 app.get("/workspaces", (req, res) => {
   res.setHeader("Content-Type", "application/json");
   res.send([
-    { name: "workspace 1" },
-    { name: "workspace 2" },
-    { name: "workspace 3" },
+    { name: "스트리트의 세카이" },
+    { name: "카미야마 고교" },
+    { name: "WEEKEND GARAGE" },
   ]);
 });
 
